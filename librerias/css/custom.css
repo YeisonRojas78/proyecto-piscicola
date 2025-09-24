@@ -1,0 +1,110 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100%;
+    background-color: #198754;
+    color: white;
+    transition: all 0.3s;
+    z-index: 1000;
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+#content {
+    flex: 1;
+    transition: all 0.3s;
+    margin-left: 0;
+}
+
+#content.active {
+    margin-left: 250px;
+}
+
+i {
+    margin: 15px;
+}
+
+#menu li {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+#menu a {
+    text-decoration: none;
+    width: 100%;
+}
+
+#menu li:hover {
+    color: #ffffff;
+    background-color: rgb(25 135 84);
+}
+
+.page-title {
+    padding-top: 60px;
+}
+
+.justify-text {
+    text-align: justify;
+}
+
+.fs-xs {
+    font-size: 11px;
+}
+
+.fs-xs1 {
+    font-size: 10px;
+}
+
+#autoExpandir {
+    min-height: 40px;
+    padding: 5px;
+    font-size: 16px;
+    width: 100%;
+    resize: none; /* Desactiva el resize manual del usuario */
+    overflow: hidden; /* Evita scrollbars */
+}
+
+/* Estilos para el badge de notificaciones */
+.notification-icon {
+    position: relative;
+    display: inline-block;
+}
+
+.notification-badge {
+    position: absolute;
+    top: -4px;  /* Ajuste vertical del badge */
+    right: -6px; /* Ajuste horizontal del badge */
+    background-color: #dc3545; /* Fondo rojo (Bootstrap danger) */
+    color: white;
+    border-radius: 50%;
+    padding: 0.25rem 0.4rem; /* Tamaño reducido del badge */
+    font-size: 0.7rem; /* Tamaño de fuente más pequeño */
+    font-weight: bold;
+    line-height: 1;
+    border: 2px solid white; /* Borde blanco para mejor contraste */
+    min-width: 20px;  /* Ancho mínimo del badge */
+    text-align: center;
+}
+
+/* Ajusta el tamaño del ícono de la campana para que sea más pequeño y delicado */
+.bi-bell-fill {
+    font-size: 1.25rem;
+    color: white;
+}
+
+/* Eliminar la flecha de dropdown */
+.nav-link.dropdown-toggle::after {
+    display: none;
+}
+/* Fin de estilos para el badge de notificaciones */
